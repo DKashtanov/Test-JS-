@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+   <head>
+       <meta charset="UTF-8">  
+       <title>Задание 3</title>
+   </head>
+   <body> 
+    <script> 
+    alert('Задание 3. Составить алгоритм: на входе есть числовой массив, необходимо вывести элементы массива кратные 3')  
+    let chisla = prompt("Введите числа через запятую").split(',');
+    function myFilter(param) {
+    let array = [];   
+    for (let i = 0; i < param.length; i++) {
+      if (param[i] % 3 === 0) { 
+        array.push(param[i]);
+        }
+     }
+    return array;
+    }
+     alert(myFilter(chisla)); 
+    </script>
+   </body>
+</html>
